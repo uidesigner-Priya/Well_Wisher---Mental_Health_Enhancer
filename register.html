@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Registration Site</title>
+    <link rel="stylesheet" href= "C:\Users\dhars\OneDrive\Documents\TEAM 6\Feel-Well-Web-App-main (3)\Feel-Well-Web-App-main\css\loginstyle.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>Registration Form</header>
+      <form>
+        <div class="input-field">
+          <input type="text" autocomplete="kakashi">
+          <label>User name</label>
+        </div>
+        <div class="input-field">
+          <input type="text" autocomplete="kashi@gmail.com">
+          <label>Email</label>
+        </div>
+        <div class="input-field">
+            <input class="pswrd" type="password" autocomplete="123">
+            <span class="show">SHOW</span>
+            <label>Password</label>
+        </div>
+        <div class="button">
+            <div class="inner" ></div>
+            <a href= "C:\Users\dhars\OneDrive\Documents\TEAM 6\Feel-Well-Web-App-main (3)\Feel-Well-Web-App-main\loginindex.html">SUBMIT</a>
+        </div>
+        </form>
+    </div>
+    <script>
+      var input = document.querySelector('.pswrd');
+      var show = document.querySelector('.show');
+      show.addEventListener('click', active);
+      function active(){
+        if(input.type === "password"){
+          input.type = "text";
+          show.style.color = "#1DA1F2";
+          show.textContent = "HIDE";
+        }else{
+          input.type = "password";
+          show.textContent = "SHOW";
+          show.style.color = "#111";
+        }
+      }
+    </script>
+
+  </body>
+</html>
